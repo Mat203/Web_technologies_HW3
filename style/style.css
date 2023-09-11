@@ -1,0 +1,27 @@
+header {
+    background: var(--website-frame-white, #FFF);
+    backdrop-filter: blur(8px);
+    height: 80px;
+}
+
+.center-buttons {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 21px 563px 21px 330px;
+}
+
+.logo { /* Corrected class name */
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.right-buttons {
+    display: inline-flex;
+    padding: 21px;
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 15px;
+}
