@@ -1,27 +1,114 @@
-header {
-    background: var(--website-frame-white, #FFF);
-    backdrop-filter: blur(8px);
-    height: 80px;
+body {
+    background-color: white;
+    font-size: 18px;
 }
 
-.center-buttons {
-    display: inline-flex;
-    justify-content: center;
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 80px;
+    font-family: 'Acme', sans-serif;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 40px;
-    padding: 21px 563px 21px 330px;
 }
 
-.logo { /* Corrected class name */
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+    padding: 26px 0 30px 20px;
+}
+
+.header-accent {
+    color: var(--dark);
+}
+
+.header-list {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header-menu {
+    display: inline-block;
+    color: var(--dark);
+    padding: 24px 0;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    padding: 6px 16px 6px 16px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.header-menu:hover {
+    border-radius: 1000px;
+    border: 1px solid var(--website-button-bluetiful, #0168FC);
+}
+
+.header-menu:active {
+    color: #0168FC;
 }
 
 .right-buttons {
     display: inline-flex;
-    padding: 21px;
-    justify-content: flex-end; 
-    align-items: center; 
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
+}
+
+.primary {
+    border-radius: 1000px;
+    background: #0168FC;
+    color: white;
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary:hover {
+    background-color: #004db8;
+}
+
+.select-container {
+    display: inline-block;
+    padding: 8px 20px 8px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    border: 1px solid var(--website-button-blue, #CBD7E8);
+    direction: rtl;
+}
+
+select {
+    font-family: 'Acme', sans-serif;
+    border: none;
+    font-size: 18px;
+}
+
+select:hover {
+    cursor: pointer;
+    color: #0168FC;
 }

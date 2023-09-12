@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <title>Style Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <title>Header Example</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo"> <!-- Corrected class name -->
-            <img src="Logos.png" alt="Logo">
-        </div>
-        <div class="right-buttons">
-            <button class="button">Кнопка 1</button>
-            <button class="button">Кнопка 2</button>
-        </div>
-        <div class="center-buttons">
-            <button class="button">Кнопка 3</button>
-            <button class="button">Кнопка 4</button>
-            <button class="button">Кнопка 5</button>
-            <button class="button">Кнопка 6</button>
+    <header class="header">
+        <div class="header-inner container">
+            <img src="Logos.png" class="header-logo">
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li>
+                        <a class="header-menu" href="">About Us</a>
+                    </li>
+                    <li>
+                        <a class="header-menu" href="">Link 2</a>
+                    </li>
+                    <li>
+                        <a class="header-menu" href="">Active btn</a>
+                    </li>
+                    <li>
+                        <a class="header-menu" href="">Important Link</a>
+                    </li>
+                    <li>
+                        <a class="header-menu" href="">Contacts</a>
+                    </li>
+                    <li>
+                        <a class="header-menu" href="">Hovered btn</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="right-buttons">
+                <li>
+                    <div class="select-container">
+                        <select>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                </li>
+                <li><a class="primary" href="">Primary button</a></li>
+            </ul>
         </div>
     </header>
+
 </body>
+
 </html>
