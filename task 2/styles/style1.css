@@ -1,0 +1,35 @@
+.scrolltable {
+    overflow: scroll;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border: 1px solid #fd18b8;
+}
+
+.table td {
+    padding: 5px;
+    border: 5px solid #fe6506;
+}
+
+.table th {
+    background-color: blueviolet;
+}
+.table th::before {
+    content: "\2713"; 
+    margin-right: 5px; 
+}
+body {
+    background-color: #6bcbff;
+}
+
+tr:nth-child(even) {
+    background-color: #ff3c3c;
+}
+
+tr:nth-child(odd) {
+    background-color: #014586;
+}

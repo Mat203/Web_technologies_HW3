@@ -1,0 +1,35 @@
+.scrolltable {
+    overflow: scroll;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.table {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    border: 5px solid #0bf28e;
+}
+
+.table td {
+    padding: 3px;
+    border: 2px solid #d61d52;
+}
+
+.table th {
+    background-color: rgb(242, 255, 0);
+}
+.table th::before {
+    content: "\2605"; 
+    margin-right: 20px; 
+}
+body {
+    background-color: #d1ffbd;
+}
+
+tr:nth-child(even) {
+    background-color: #ffe923;
+}
+
+tr:nth-child(odd) {
+    background-color: #9a05f7;
+}
