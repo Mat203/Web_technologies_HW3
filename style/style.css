@@ -170,6 +170,7 @@ select:hover {
     height: 900px;
     display: flex;
     padding-left: 98px;
+    font-family: Acme;
 }
 
 .get-in-touch h2 {
@@ -207,7 +208,7 @@ select:hover {
     gap: 16px;
 }
 
-.custom-checkbox {
+.custom-contactsbtn {
     border-radius: 1000px;
     border: 1px solid var(--website-button-blue, #CBD7E8);
     cursor: pointer;
@@ -224,20 +225,67 @@ select:hover {
     align-items: center;
 }
 
-.custom-checkbox:hover {
-    color:#ffffff;
-    background-color: #0168FC;
-}
-.custom-checkbox:active {
-    color:#ffffff;
+.custom-contactsbtn:hover {
+    color: #FFF;
     background-color: #0168FC;
 }
 
-input[type="checkbox"] {
-    display: none;
+.custom-contactsbtn:active {
+    background-color: #0168FC;
 }
 
-input[type="checkbox"]:checked {
-    background-color: #000;
-    color: #fff;
+.touch-list {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.name-company {
+    border-radius: 50px;
+    border: 1px solid var(--website-input-gainsboro, #D9D9D9);
+    background: var(--website-frame-white, #FFF);
+    padding: 4px 4px 4px 24px;
+    display: flex;
+    height: 54px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.contacts-form {
+    padding: 15px 15px 15px 0;
+}
+
+.email-phone {
+    border-radius: 50px;
+    border: 1px solid var(--website-input-gainsboro, #D9D9D9);
+    background: var(--website-frame-white, #FFF);
+    padding: 4px 4px 4px 24px;
+    height: 54px;
+    width: 49%;
+    margin-right: 5px;
+}
+
+.submitbtn {
+    display: inline-flex;
+    padding: 14px 24px 16px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    background: var(--website-button-bluetiful, #0168FC);
+    margin-top: 16px;
+    border-width: 0px;
+    font-family: Acme;
+    color: #FFF;
+}
+
+.contactbtn {
+    margin-right: 5px;
+    display: inline-flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    border: 1px solid var(--website-button-blue, #CBD7E8);
 }
