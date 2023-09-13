@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+
+
 body {
     background-color: white;
     font-size: 18px;
@@ -32,10 +38,14 @@ a {
 }
 
 .header-logo {
-    width: 24px;
-    height: 24px;
+    display: flex;
     flex-shrink: 0;
     padding: 26px 0 30px 20px;
+}
+
+.image-nav {
+    width: 24px;
+    height: 24px;
 }
 
 .header-accent {
@@ -111,4 +121,83 @@ select {
 select:hover {
     cursor: pointer;
     color: #0168FC;
+}
+
+.about-us {
+    height: 1024px;
+    padding: 20px;
+}
+
+.blue-container {
+    display: flex;
+    height: 984px;
+    padding: 232px 98px;
+    justify-content: center;
+    align-items: center;
+    gap: 109px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #01A0FE;
+}
+
+.text h1 {
+    width: 695px;
+    color: var(--website-headline-white, #FFF);
+    font-family: Almarai;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: -1px;
+}
+
+.text p {
+    color: #FFF;
+    font-family: 'Almendra';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.image-main {
+    width: 454px;
+    height: 520px;
+    flex-shrink: 0;
+}
+
+.get-in-touch {
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-in-touch h2 {
+    color: #000029;
+    font-family: Alef;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: -1px;
+}
+
+.contacts {
+    color: #2c2c44;
+    font-family: Acme;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 381px;
+}
+
+.form h2 {
+    color:  #000029;
+    font-family: Alef;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 124px 617px 556px 770px;
 }
